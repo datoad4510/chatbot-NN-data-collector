@@ -1,9 +1,9 @@
 const server = "https://neural-network123.herokuapp.com";
 // const server = "http://localhost:3000";
 
-window.onload = (event) => {
-    await printDatabase();
-    
+window.onload = async (event) => {
+	await printDatabase();
+
 	const submit_button = document.querySelector("#submit");
 
 	submit_button.addEventListener("click", async (event) => {
