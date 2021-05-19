@@ -1,4 +1,5 @@
-const server = "https://neural-network123.herokuapp.com";
+// const server = "https://neural-network123.herokuapp.com";
+const server = "http://localhost:3000";
 
 window.onload = (event) => {
 	const submit_button = document.querySelector("#submit");

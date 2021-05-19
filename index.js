@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
-const url =
-	"mongodb+srv://datoad4510:2hLRKbEX8u8efDDP@cluster0.m8xlq.mongodb.net/test?retryWrites=true&w=majority";
+
+const url = "mongodb+srv://datoad4510:2hLRKbEX8u8efDDP@cluster0.hqh9r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 const client = new MongoClient(url, {
 	useNewUrlParser: true,
@@ -30,12 +30,16 @@ app.get("/", (req, res) => {
 app.post("/add_item", (req, res) => {
 	//insert item into database
 	const list_item = req.body;
-
 	const collection = client.db("database").collection("labeled-sentences");
 	try {
-		collection.insertOne(list_item).then((data) => {
-			res.send(data.insertedId);
-		});
+		collection
+			.insertOne(list_item)
+			.then((data) => {
+				res.send(data.insertedId);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
 		console.log(`Inserted ${list_item.data}`);
 	} catch (error) {
 		throw error;
