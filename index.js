@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
@@ -12,7 +12,8 @@ app.use(bodyParser.json());
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
 
-const url = "mongodb+srv://datoad4510:2hLRKbEX8u8efDDP@cluster0.hqh9r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const url =
+	"mongodb+srv://datoad4510:2hLRKbEX8u8efDDP@cluster0.hqh9r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 const client = new MongoClient(url, {
 	useNewUrlParser: true,
