@@ -47,6 +47,23 @@ app.post("/add_item", (req, res) => {
 	}
 });
 
+app.get("/get_items", (req, res) => {
+	// pull list items from server
+
+	// get/find all documents in collection
+	client
+		.db("database")
+		.collection("labeled-sentences")
+		.find()
+		.toArray((err, result) => {
+			if (err) {
+				res.send(err);
+			} else {
+				res.send({ collection: result });
+			}
+		});
+});
+
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`);
 });

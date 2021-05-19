@@ -2,6 +2,8 @@ const server = "https://neural-network123.herokuapp.com";
 // const server = "http://localhost:3000";
 
 window.onload = (event) => {
+    await printDatabase();
+    
 	const submit_button = document.querySelector("#submit");
 
 	submit_button.addEventListener("click", async (event) => {
@@ -44,4 +46,17 @@ async function insertLabeledSentence(todo) {
 		.catch((error) => {
 			console.error("Error:", error);
 		});
+}
+
+async function fetchList() {
+	// get all todos from server
+	return fetch(`${server}/get_items`)
+		.then((res) => res.json())
+		.then((res) => res.collection)
+		.catch((err) => console.log(err));
+}
+
+async function printDatabase() {
+	const db = await fetchList();
+	console.log(db);
 }
