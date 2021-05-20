@@ -8,7 +8,7 @@ window.onload = async (event) => {
 
 	submit_button.addEventListener("click", async (event) => {
 		const text_input = document.querySelector("#text");
-		const text_input_dva = document.querySelector("#textdva")
+		const text_input_dva = document.querySelector("#textdva");
 		//const date_button = document.querySelector("#date-button");
 		//const balance_button = document.querySelector("#balance-button");
 
