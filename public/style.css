@@ -1,13 +1,11 @@
-#image{
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    background-image: url("../public/images/backgroundUkugma.jpg");
+body{
+    background-image: url("../public/images/background.jpg");
     position: absolute;
 
-    filter: blur(10px);
+    color: rgb(51, 255, 221);
 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
 }
 
@@ -16,39 +14,17 @@
     width: 100%;
 }
 
-.leftside:hover, .rightside:hover{
-    filter:var(--image-filter);
+
+.bottomside{
+    background-image: url("../public/images/635963.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border: solid 3px red;
 }
 
 @media screen and (min-width:768px){
     .leftside, .rightside{
         height: 100vh;
     }
-
-    .leftside:hover, .rightside:hover{
-        
-    }
-
-    #image{
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
-        background-image: url("../public/images/background.jpg");
-        position: absolute;
-    
-        filter: blur(10px);
-    
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-.bottomside{
-    
-}
-
-.leftside{
-}
-
-.rightside{
 }
