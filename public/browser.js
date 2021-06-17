@@ -8,28 +8,23 @@ window.onload = async (event) => {
 
 	submit_button.addEventListener("click", async (event) => {
 		const text_input = document.querySelector("#text");
-		const date_button = document.querySelector("#date-button");
-		const balance_button = document.querySelector("#balance-button");
-
-		let label;
-
-		if (date_button.checked) {
-			label = 0;
-		} else if (balance_button.checked) {
-			label = 1;
-		} else {
-			throw error;
-		}
+		const text_input_dva = document.querySelector("#textdva");
+		//const date_button = document.querySelector("#date-button");
+		//const balance_button = document.querySelector("#balance-button");
 
 		const text = text_input.value;
 
 		const obj = {
 			text: text,
-			label: label,
+			label: 1,
 		};
 
-		const id = await insertLabeledSentence(obj);
-		console.log(id);
+		//const id = await insertLabeledSentence(obj);
+		//console.log(id);
+
+		text_input.value = "";
+		text_input_dva.value = "";
+		alert("მონაცემები გაიზავნა, მადლობა ^^");
 	});
 };
 
