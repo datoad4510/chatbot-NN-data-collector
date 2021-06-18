@@ -115,7 +115,7 @@ body {
     }
 }
 
-#left-info {
+/* #left-info {
     width: fit-content;
     position: absolute;
     z-index: 10;
@@ -158,5 +158,44 @@ body {
     #right-info {
         width: 50vw;
         font-size: small;
+    }
+} */
+
+#left-info {
+    position: absolute;
+    z-index: 10;
+    left: 10vw;
+    width: 30vw;
+    border: 1px solid #03c2c2;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+#right-info {
+    position: absolute;
+    z-index: 10;
+    right: 10vw;
+    width: 30vw;
+    border: 1px solid #03c2c2;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 680px) {
+    #left-info {
+        font-size: medium;
+    }
+
+    #right-info {
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 415px) {
+    #left-info {
+        width: 35vw;
+    }
+
+    #right-info {
+        width: 35vw;
     }
 }
