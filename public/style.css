@@ -42,7 +42,7 @@ body {
 
 #left,
 #right {
-    background-image: url("../public/images/realdeal.png");
+    background-image: url("images/realdeal.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -192,12 +192,12 @@ body {
 }
 @media screen and (max-width: 415px) {
     #left-info {
-      font-size: small;
+        font-size: small;
         width: 35vw;
     }
 
     #right-info {
-      font-size: small;
+        font-size: small;
         width: 35vw;
     }
 }
