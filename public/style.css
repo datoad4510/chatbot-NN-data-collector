@@ -99,6 +99,10 @@ body {
     border-radius: 8px;
 }
 
+#info{
+    text-align: center;
+}
+
 #inputs {
     width: 950px;
     height: 300px;
