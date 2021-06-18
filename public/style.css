@@ -3,6 +3,15 @@
     src: url(fonts/main.ttf) format("truetype");
 }
 
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(0, 255, 34);
+    }
+    to {
+      text-shadow: 0 0 20px rgb(37, 137, 204);
+    }
+  }
+
 html {
     margin: 0;
     padding: 0;
@@ -12,9 +21,10 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
+    color: #092ed1;
+    font-size: 16px;
 
     font-family: "mainFont" !important;
-    font-size: 25px;
 
     overflow-x: hidden;
 }
@@ -26,7 +36,6 @@ body {
     height: 100%;
 
     font-family: "mainFont" !important;
-    font-size: 25px;
 
     overflow-x: hidden;
 }
@@ -96,6 +105,9 @@ body {
     position: fixed;
     left: calc(50% - 475px);
     top: 50%;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -161,14 +173,15 @@ body {
     }
 } */
 
-#left-info {
+#left-info{
     position: absolute;
     z-index: 10;
     left: 10vw;
     width: 30vw;
-    border: 1px solid #03c2c2;
-    background-color: aliceblue;
     border-radius: 5px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 #right-info {
@@ -176,9 +189,10 @@ body {
     z-index: 10;
     right: 10vw;
     width: 30vw;
-    border: 1px solid #03c2c2;
-    background-color: aliceblue;
     border-radius: 5px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 @media screen and (max-width: 680px) {
