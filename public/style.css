@@ -33,11 +33,13 @@ body {
 #leftText {
     margin-left: 40px;
     margin-top: 40px;
+    z-index: 10;
 }
 
 #rightText {
     margin-left: 590px;
     margin-top: -46px;
+    z-index: 10;
 }
 
 #left,
