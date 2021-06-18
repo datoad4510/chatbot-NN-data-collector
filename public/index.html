@@ -4,34 +4,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="browser.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="browser.js"></script>
 </head>
 
 <body>
-    <div id="main">
+  <div id="main">
+    <p id="left-info">თარიღის მაგალითი: <br><br>
+      "დღეს რა დღეა?" <br><br>
+      "ხვალ რა რიცხვია ხომ ვერ მეტყვი" <br><br>
+      "ორშაბათს რამე დღესასწაულია?"</p>
+    <p id="right-info">ბალანსის მაგალითი: <br><br>
+      "ფულის დარიცხვა მინდა" <br><br>
+      "ანგარიშზე რამდენი მაქ?" <br><br>
+      "საკომისიო რამდენია დარიცხვაზე?"</p>
     <div id='left'>
+
     </div>
     <div id="right">
     </div>
-</div>
-<div id="inputs">
-    <div id="leftText"> 
-        <input type="text" class="text" placeholder="კითხვა თარიღთან დაკავშირებით" />
+  </div>
+  <div id="inputs">
+    <div id="leftText">
+      <input type="text" class="text" id="first-question" placeholder="კითხვა თარიღთან დაკავშირებით" />
     </div>
-    
-    <div id="rightText"> 
-        <input type="text" class="text" placeholder="კითხვა ბალანსთან დაკავშირებით" />
+
+    <div id="rightText">
+      <input type="text" class="text" id="second-question" placeholder="კითხვა ბალანსთან დაკავშირებით" />
     </div>
 
     <div id="fixed">
-        <input class="btnSubmit" type="button" value="გაგზავნა">
+      <input class="btnSubmit" type="button" value="გაგზავნა">
     </div>
-</div>
-    <!-- <div class="wrapper">
+  </div>
+  <!-- <div class="wrapper">
                 <div class="card">
                   <div class="front">
                     <h1>Signature</h1>
@@ -55,7 +64,7 @@
                 </div>
               </div> -->
 
-    </div>
+  </div>
 </body>
 
 </html>
