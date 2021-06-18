@@ -192,10 +192,12 @@ body {
 }
 @media screen and (max-width: 415px) {
     #left-info {
+      font-size: small;
         width: 35vw;
     }
 
     #right-info {
+      font-size: small;
         width: 35vw;
     }
 }
