@@ -28,7 +28,6 @@ body {
     font-family: "mainFont" !important;
     font-size: small;
 
-    overflow-x: hidden;
     margin-bottom: 60px;
     align-items: center;
 }
@@ -54,7 +53,7 @@ body {
 
 .text {
     font-family: "mainFont" !important;
-    width: 300px;
+    min-width: 220px;
     height: 38px;
     padding-left: 13px;
     border: solid 2px #03c2c2;
@@ -139,4 +138,8 @@ body {
 
 #instruction-span {
     color: red;
+}
+
+.brown {
+    color: brown;
 }
