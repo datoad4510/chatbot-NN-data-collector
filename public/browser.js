@@ -1,3 +1,5 @@
+const { text } = require("body-parser");
+
 const server = "https://neural-network123.herokuapp.com";
 // const server = "http://localhost:3000";
 
@@ -23,11 +25,15 @@ window.onload = async (event) => {
             label: 1,
         };
 
-        const id1 = await insertLabeledSentence(label_zero);
-        console.log(id1);
+        if (text1 !== "") {
+            const id1 = await insertLabeledSentence(label_zero);
+            console.log(id1);
+        }
 
-        const id2 = await insertLabeledSentence(label_one);
-        console.log(id2);
+        if (text2 !== "") {
+            const id2 = await insertLabeledSentence(label_one);
+            console.log(id2);
+        }
 
         first.value = "";
         second.value = "";
