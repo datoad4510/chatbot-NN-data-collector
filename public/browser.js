@@ -10,16 +10,16 @@ window.onload = async (event) => {
         const first = document.querySelector("#first-question");
         const second = document.querySelector("#second-question");
 
-        const text1 = first.value;
+        const sentence1 = first.value;
 
         const label_zero = {
-            text: text1,
+            sentence: sentence1,
             label: 0,
         };
-        const text2 = second.value;
+        const sentence2 = second.value;
 
         const label_one = {
-            text: text2,
+            sentence: sentence2,
             label: 1,
         };
 
