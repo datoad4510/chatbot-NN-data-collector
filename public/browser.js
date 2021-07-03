@@ -1,5 +1,3 @@
-const { text } = require("body-parser");
-
 const server = "https://neural-network123.herokuapp.com";
 // const server = "http://localhost:3000";
 
